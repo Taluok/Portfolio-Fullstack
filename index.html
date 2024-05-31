@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header class="header">
         <a href="#home" class="logo">Tania <span>Ludueña</span></a>
@@ -15,38 +17,134 @@
         <i class='bx bx-menu' id="menu-icon"></i>
 
         <navbar class="navbar">
-            <a href="#home"onclick="toggleMenu() class="active">Home</a>
+            <a href="#home" onclick="toggleMenu() class=" active">Home</a>
             <a href="#education" onclick="toggleMenu()">Education</a>
             <a href="#projects" onclick="toggleMenu()">Projects</a>
             <a href="#contact" onclick="toggleMenu()">Contact</a>
         </navbar>
     </header>
-
+    <!--seccion de contacto-->
     <seccion class="home" id="home">
         <div class="home-content">
             <h1>Hi, It's <span>Tania</span></h1>
             <h3 class="text-animation">I´m a <span></span></h3>
-            <p>As a junior full-stack developer, I am passionate about learning and growing in the world of web development. 
-            With knowledge of technologies such as React, Node.js, MongoDB, etc., I am excited to apply my skills to innovative 
-            and functional projects. I focus on creating web applications that combine an attractive user interface with good 
-            performance, and I am thrilled to collaborate with multidisciplinary teams to take projects from conception to 
-            implementation. Although I am a junior developer, I bring energy, curiosity, and a willingness to learn, and 
-            I am ready to take on new challenges and contribute to the success of projects.</p>
+            <p>As a junior full-stack developer, I am passionate about learning and growing in the world of web
+                development.
+                With knowledge of technologies such as React, Node.js, MongoDB, etc., I am excited to apply my skills to
+                innovative
+                and functional projects. I focus on creating web applications that combine an attractive user interface
+                with good
+                performance, and I am thrilled to collaborate with multidisciplinary teams to take projects from
+                conception to
+                implementation. Although I am a junior developer, I bring energy, curiosity, and a willingness to learn,
+                and
+                I am ready to take on new challenges and contribute to the success of projects.</p>
             <div class="social-icon">
-                <a href="#"><i class='bx bxl-linkedin'></i></a>
-                <a href="#"><i class='bx bxl-github'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'
+                        onclick="location.href='https://www.linkedin.com/in/taludev/'"></i></a>
+                <a href="#"><i class='bx bxl-github' onclick="location.href='https://github.com/Taluok/'"></i></a>
             </div>
 
             <div class="btn-group">
                 <a href="#" class="btn" onclick="window.open('./assents/CV.pdf')">Download CV</a>
-                <a href="#contact" class="btn">Contact</a>
+                <a href="#contact" class="btn" onclick="location.href='./#contact'">Contact</a>
             </div>
         </div>
-            <div class="home-img">
-                <img src="./assents/image.jpg" alt="">
-            </div>
+        <div class="home-img">
+            <img src="./assents/image.jpg" alt="">
+        </div>
     </seccion>
-
+    <!--Seccion de Tecnologias/Habilidades-->
+    <section class="experience" id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="timeline-items">
+            <div class="timeline-item">
+                <div class="timeline-dot">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="timeline-content">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>SASS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>TypeScript</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Material UI</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>PostgreSQL</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Node JS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Express JS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                            <div>
+                                <h3>Git</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+    </section>
     <script src="script.js"></script>
 </body>
+
 </html>
