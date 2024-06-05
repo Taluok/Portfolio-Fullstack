@@ -281,32 +281,39 @@ logo span {
         width: calc(100% + 8px);
     }
 }
-.heading{
+/*Seccion experience*/
+.heading {
     font-size: 8rem;
     text-align: center;
     margin: 3rem 0;
+    margin-bottom: -2rem;
 }
-.headingg{
-    font-size: 3rem;
+
+.headingg {
+    font-size: 2.8rem;
     text-align: center;
     margin: 5rem 0;
 }
-.experience{
+
+.experience {
     padding: 100px 15px;
     background: black;
-    margin-top: 20rem;
+    margin-top: 200px;
 }
-.experience h2{
+
+.experience h2 {
     margin-bottom: 5rem;
 }
-.timeline-items{
-    max-width: 130px;
+
+.timeline-items {
+    max-width: 1200px;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     position: relative;
 }
-.timeline-items::before{
+
+.timeline-items::before {
     content: "";
     position: absolute;
     width: 5px;
@@ -314,50 +321,173 @@ logo span {
     background-color: #9b28ff;
     left: calc(50% - 1px);
 }
-.timeline-item{
+
+.timeline-item {
     margin-bottom: 40px;
     width: 100%;
     position: relative;
 }
-.timeline-item:last-child{
+
+.timeline-item:last-child {
     margin-bottom: 0;
 }
-.timeline-item{
+
+.timeline-item {
     margin-bottom: 40px;
     width: 100%;
     position: relative;
 }
-.timeline-item:last-child{
+
+.timeline-item:last-child {
     margin-bottom: 0;
 }
-.timeline-item:nth-child(odd){
+
+.timeline-item:nth-child(odd) {
     padding-right: calc(50% + 30px);
     text-align: right;
 }
-.timeline-item:nth-child(even){
+
+.timeline-item:nth-child(even) {
     padding-left: calc(50% + 30px);
 }
-.timeline-dot{
+
+.timeline-dot {
     height: 21px;
     width: 21px;
     background-color: #9b28ff;
-    box-shadow: 0 0 25px #9b28ff,
-                0 0 50px #9b28ff;
+    box-shadow: 0 0 25px #9b28ff, 0 0 50px #9b28ff;
     position: absolute;
     left: calc(50% - 8px);
     border-radius: 50%;
     top: 10px;
 }
-.timeline-date{
+
+.timeline-date {
     font-size: 20px;
     font-weight: 800;
     color: white;
     margin: 6px 0 15px;
 }
-.timeline-content{
-    background-color: black;
+
+.timeline-content {
+    background-color: #080808;
     border: 3px solid #9b28ff;
-    padding:  30px 50px;
+    padding: 30px 50px;
     border-radius: 4rem;
+    box-shadow: 0 0 10px #9b28ff;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
+.timeline-content:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #9b28ff;
+}
+
+.timeline-content h3 {
+    font-size: 20px;
+    color: white;
+    margin: 0 0 10px;
+    font-weight: 500;
+}
+
+.timeline-content p {
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #9b28ff;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #080808;
+    width: 50;
+}
+/*proyects*/
+.proyects{
+    position: relative;
+}
+.heading1{
+    font-size: 8rem;
+    text-align: center;
+    margin: 2.5rem 0;
+    margin-bottom: 6rem;
+}
+.textp1{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.details-container{
+    text-align: center;
+    
+}
+.proyecttitle{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+}
+.btn1 {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: #9b28ff;
+    box-shadow: 0 0 25px #080808;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: black;
+    border: 2px solid transparent;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3 ease-in-out;
+    cursor: pointer;
+    margin-right: 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+.btn1:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 50px #9b28ff;
+}
+/*Footer*/
+.contact{
+    background-color: black;
+}
+.contact h2{
+    margin-bottom: 3rem;
+    color: white;
+}
+.contact form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    margin: 5rem auto;
+    text-align: center;
+}
+.contact form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 2.5rem;
+    font-size: 1.8rem;
+    color: dimgray;
+    background: #080808;
+    border-radius: 2rem;
+    border: 2px solid #9b28ff;
+    margin: 1.5rem 0;
+    resize:none
+}
+.contact form .btn{
+    margin-top: 2rem;
+}
