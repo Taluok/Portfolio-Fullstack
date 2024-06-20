@@ -455,6 +455,9 @@ logo span {
     transform: scale(1.05);
     box-shadow: 0 0 50px #9b28ff;
 }
+.project-img{
+    width: 1000px;
+}
 /*Footer*/
 .contact{
     background-color: black;
